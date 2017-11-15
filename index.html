@@ -31,6 +31,9 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+        }
+        .pink {
+            color: #e91e63;
         }        
         .animate-bottom {
             position: relative;
@@ -39,7 +42,6 @@
             animation-name: animatebottom;
             animation-duration: 1s
         }
-
         @-webkit-keyframes animatebottom {
             from { bottom:-100px; opacity:0 } 
             to { bottom:0px; opacity:1 }
@@ -72,18 +74,18 @@
         <div id="b0" style="background-color:#ffffff;padding:3em;padding-top:7em;text-align:center;color:black;">
             <img src="images/bpt_.png" height="300px;" />
             <br /><br /><br />
-            <div style="text-align: center">
+            <div style="text-align:center">
                 <h3>The Best <b>Blockchain Network</b> that can ever be</h3>
                 <hr />
             </div>
             <br /><br /><br />
             <div class="mdl-grid">                
-                <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="text-align: center">
-                    <h2>Truly</h2><h2><b>Decentralized</b></h2>
-                    <h4 style="color:#b4004e">blockchain network</h4>
+                <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="text-align:center">
+                    <h2>Truly</h2><h2><b class="pink">Decentralized</b></h2>
+                    <h4>blockchain network</h4>
                     <hr class="mdl-cell--hide-desktop" />
                 </div>
-                <div class="mdl-cell mdl-cell--7-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="text-align: left"> 
+                <div class="mdl-cell mdl-cell--7-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="text-align:left"> 
                     <p><b>Bitcoin Platinum</b> uses blockchain technology to operate with no central governance or 3rd party interference; managing, issuing and maintaining bitcoins is carried out collectively by the decentralized network.</p>
                     <br />
                     <p><b>Bitcoin Platinum</b> is open-source; its design is public, nobody owns or controls Bitcoin Platinum and everyone can take part. The future shines brightly with unrestricted growth, global adoption, permissionless innovation, and decentralized development</p>
@@ -107,13 +109,13 @@
             </div>            
         </div>
         <div id="b3.9" style="background-color:white;"></div>
-        <div id="b4" style="padding:10%;background-color:#ffffff;color: black">
-            <h2 style="text-align: center;">Nodes</h2>
+        <div id="b4" style="padding:10%;background-color:#ffffff;color:black">
+            <h2 style="text-align:center;">Nodes</h2>
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                    <div class="mdl-card mdl-shadow--2dp" style="background: url('images/n_btcplt.png') center / cover;background-color: #546e7a;color: white;width:100%;" onclick="location.assign('https://github.com/bitcoinplatinum/weth/releases')">
+                    <div class="mdl-card mdl-shadow--2dp" style="background:url('images/n_btcplt.png') center / cover;background-color:#546e7a;color:white;width:100%;cursor:pointer" onclick="location.assign('https://github.com/bitcoinplatinum/mist/releases')" id="n_btp" onmouseover="min('n_btp');" onmouseout="mout('n_btp');">
                         <div class="mdl-card__title mdl-card--expand"></div>
-                        <div class="mdl-card__actions" style="height: 52px;padding: 16px;background: rgba(0, 0, 0, 0.2);">
+                        <div class="mdl-card__actions" style="height:52px;padding:16px;background:rgba(0, 0, 0, 0.2);">
                             <span>BTCPLT</span>
                         </div>
                     </div>
@@ -124,17 +126,17 @@
                             <i class="material-icons">add</i>
                         </button>
                         <br />
-                        <p style="color: #707070">add your services</p>
+                        <p style="color:#707070">add your services</p>
                     </div>
                 </div>
             </div>
             <br />
-            <h2 style="text-align: center;">Wallets</h2>
+            <h2 style="text-align:center;">Wallets</h2>
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                    <div class="mdl-card mdl-shadow--2dp" style="background: url('images/w_btcplt.png') center / cover;background-color: #29434e;color: white;width:100%;" onclick="location.assign('https://github.com/bitcoinplatinum/mist/releases')">
+                    <div class="mdl-card mdl-shadow--2dp" style="background:url('images/w_btcplt.png') center / cover;background-color:#29434e;color:white;width:100%;cursor:pointer" onclick="location.assign('https://github.com/bitcoinplatinum/mist/releases')" id="w_btp" onmouseover="min('w_btp');" onmouseout="mout('w_btp');">
                         <div class="mdl-card__title mdl-card--expand"></div>
-                        <div class="mdl-card__actions" style="height: 52px;padding: 16px;background: rgba(0, 0, 0, 0.4);">
+                        <div class="mdl-card__actions" style="height:52px;padding:16px;background:rgba(0, 0, 0, 0.4);">
                             <span>BTCPLT</span>
                         </div>
                     </div>
@@ -145,12 +147,12 @@
                             <i class="material-icons">add</i>
                         </button>
                         <br />
-                        <p style="color: #707070">add your services</p>
+                        <p style="color:#707070">add your services</p>
                     </div>
                 </div>
             </div>
             <br />
-            <h2 style="text-align: center;">Mining Pools</h2>
+            <h2 style="text-align:center;">Mining Pools</h2>
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
                     <div style="margin-top:30%">
@@ -158,12 +160,12 @@
                             <i class="material-icons">add</i>
                         </button>
                         <br />
-                        <p style="color: #707070">add your services</p>
+                        <p style="color:#707070">add your services</p>
                     </div>
                 </div>
             </div>
             <br />
-            <h2 style="text-align: center;">Services</h2>
+            <h2 style="text-align:center;">Services</h2>
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
                     <div style="margin-top:30%">
@@ -171,36 +173,36 @@
                             <i class="material-icons">add</i>
                         </button>
                         <br />
-                        <p style="color: #707070">add your services</p>
+                        <p style="color:#707070">add your services</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div style="background: linear-gradient(#ffffff ,#29434e);height:300px;"></div>
-        <div id="contact" style="background-color:#29434e;padding: 3em;padding-top:6em;position: inherit;color:white;">            
+        <div style="background:linear-gradient(#ffffff ,#29434e);height:300px;"></div>
+        <div id="contact" style="background-color:#29434e;padding:3em;padding-top:6em;position:inherit;color:white;">            
             <br />
-            <h3 style="text-align: center;">Developers</h3>
-            <div class="mdl-grid" style="text-align: center;">
+            <h3 style="text-align:center;">Developers</h3>
+            <div class="mdl-grid" style="text-align:center;">
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                    <div class="mdl-card mdl-shadow--2dp" style="background: url('images/D_wjcloud.jpg') center / cover;background-color: #29434e;color: white;width:100%;" onclick="location.assign('https://github.com/wjcloud')">
+                    <div class="mdl-card mdl-shadow--2dp" style="background:url('images/D_wjcloud.jpg') center / cover;background-color:#29434e;color:white;width:100%;cursor:pointer" onclick="location.assign('https://github.com/wjcloud')" id="d_wjc" onmouseover="min('d_wjc');" onmouseout="mout('d_wjc');">
                         <div class="mdl-card__title mdl-card--expand"></div>
-                        <div class="mdl-card__actions" style="height: 52px;padding: 16px;background: rgba(0, 0, 0, 0.4);">
+                        <div class="mdl-card__actions" style="height:52px;padding:16px;background:rgba(0, 0, 0, 0.4);">
                             <span>WJ Cloud</span>
                         </div>
                     </div>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                    <div class="mdl-card mdl-shadow--2dp" style="background: url('images/D_esup.jpg') center / cover;background-color: #29434e;color: white;width:100%;" onclick="location.assign('https://github.com/ggyisub')">
+                    <div class="mdl-card mdl-shadow--2dp" style="background:url('images/D_esup.jpg') center / cover;background-color:#29434e;color:white;width:100%;cursor:pointer" onclick="location.assign('https://github.com/ggyisub')" id="d_sup" onmouseover="min('d_sup');" onmouseout="mout('d_sup');">
                         <div class="mdl-card__title mdl-card--expand"></div>
-                        <div class="mdl-card__actions" style="height: 52px;padding: 16px;background: rgba(0, 0, 0, 0.4);">
+                        <div class="mdl-card__actions" style="height:52px;padding:16px;background:rgba(0, 0, 0, 0.4);">
                             <span>Esup</span>
                         </div>
                     </div>
                 </div>
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                    <div class="mdl-card mdl-shadow--2dp" style="background: url('images/D_chalkman.jpg') center / cover;background-color: #29434e;color: white;width:100%;" onclick="location.assign('https://github.com/chalkman')">
+                    <div class="mdl-card mdl-shadow--2dp" style="background:url('images/D_chalkman.jpg') center / cover;background-color: #29434e;color:white;width:100%;cursor:pointer" onclick="location.assign('https://github.com/chalkman')" id="d_cha" onmouseover="min('d_cha');" onmouseout="mout('d_cha');">
                         <div class="mdl-card__title mdl-card--expand"></div>
-                        <div class="mdl-card__actions" style="height: 52px;padding: 16px;background: rgba(0, 0, 0, 0.4);">
+                        <div class="mdl-card__actions" style="height:52px;padding:16px;background:rgba(0, 0, 0, 0.4);">
                             <span>chalkman</span>
                         </div>
                     </div>
@@ -211,24 +213,25 @@
                             <i class="material-icons">add</i>
                         </button>
                         <br />
-                        <p style="color: #e0e0e0">Join Us!</p>
+                        <p style="color:#e0e0e0">Join Us!</p>
                     </div>
                 </div>
             </div>
             <div class="mdl-grid">
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="padding: 2em;">
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="padding:2em;">
                     <div>
                         <h3>Community</h3>
-                        <a href="https://twitter.com/btcplt" class="hov" style="color:white;"><i class="fa fa-twitter" style="font-size: 25px;margin-right: 5px;color: white;"></i></a>
-                        <a href="https://www.reddit.com/r/bitcoinplatinum" class="hov" style="color:white;"><i class="fa  fa-reddit-alien" style="font-size: 25px;margin-right: 5px;color: white;"></i></a>
-                        <a href="https://www.github.com/bitcoinplatinum" class="hov" style="color:white;"><i class="fa fa-git" style="font-size: 25px;margin-right: 5px;color: white;"></i></a>
+                        <a href="https://twitter.com/btcplt" class="hov" style="color:white;"><i class="fa fa-twitter" style="font-size:25px;margin-right:5px;color:white;"></i></a>
+                        <a href="https://www.reddit.com/r/bitcoinplatinum" class="hov" style="color:white;"><i class="fa  fa-reddit-alien" style="font-size:25px;margin-right:5px;color:white;"></i></a>
+                        <a href="https://www.github.com/bitcoinplatinum" class="hov" style="color:white;"><i class="fa fa-git" style="font-size:25px;margin-right:5px;color:white;"></i></a>
+                        <a href="https://bitcoinplatinum.slack.com/join/shared_invite/enQtMjcwMDUyMDA4OTY1LTM3N2I2YzU3NjE1OWFkY2ZiNmQxYjJjOGQ3YWViOTJiZjQxMWFkMTUyMjJlNzM0ZTliNDcwZWFjZGFlOWZhZjY" class="hov" style="color:white;"><i class="fa fa-slack" style="font-size:25px;margin-right:5px;color:white;"></i></a>                        
                     </div>
                     <div>
                         <br />
                         <p>* Please be careful of scam sites. We do not sell BTP or require your private keys. Your security is your responsibility.</p>
                     </div>                    
                 </div>
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="padding: 2em;">
+                <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="padding:2em;">
                     <h3 onclick="location.assign('https://twitter.com/btcplt')">Tweets @BTCPLT</h3>
                     <a class="twitter-timeline" data-chrome="noheader nofooter noborders transparent noscrollbar" data-height="350" data-theme="dark" data-link-color="#8eacbb" href="https://twitter.com/btcplt"></a>
                     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -238,7 +241,9 @@
         <footer class="mdl-mega-footer" style="background-color:#29434e;">
             <div class="mdl-mega-footer__middle-section">        
                 <div class="mdl-mega-footer__bottom-section">
-                    <div class="mdl-logo" onclick="location.assign('https://btcplt.org')">Bitcoin Platinum</div>
+                    <div class="mdl-logo" onclick="location.assign('https://sugarcane.foundation')">Sugarcane Foundation</div>
+                    <a href="https://twitter.com/sugarcf" class="hov" style="color:white;"><i class="fa fa-twitter" style="font-size:25px;margin-right:5px;color:white;"></i></a>
+                    <a href="https://www.github.com/sugarcf" class="hov" style="color:white;"><i class="fa fa-git" style="font-size:25px;margin-right:5px;color:white;"></i></a>
                 </div>
             </div>            
         </footer>
@@ -270,7 +275,19 @@
                     }, 2000, 'easeInOutQuint');
                 }
             });
+        }        
+        function min(id) {
+            var child = document.getElementById(id);
+            child.classList.remove("mdl-shadow--2dp");
+            child.classList.add("mdl-shadow--12dp");
+            child.children[1].style.background = "rgba(0, 0, 0, 0.8)"
         }    
+        function mout(id) {
+            var child = document.getElementById(id);
+            child.classList.remove("mdl-shadow--12dp");
+            child.classList.add("mdl-shadow--2dp");
+            child.children[1].style.background = "rgba(0, 0, 0, 0.2)"
+        }
     </script>
 </body>
 </html>
