@@ -67,7 +67,26 @@
             <a class="mdl-navigation__link" href="#b1" id="lname"><span onclick="document.getElementById('lname').click();" class="mdl-layout-title">Bitcoin Platinum</span></a>
             <div class="mdl-layout-spacer"></div>
             <div>
-                <button id="lang_menu" class="mdl-button mdl-js-button mdl-button--icon">
+                <span class="mdl-chip mdl-chip--contact mdl-color--green mdl-color-text--white mdl-cell--hide-phone" style="margin-right:2rem;" onclick="location.pathname = '/download.html'">
+                    <span class="mdl-chip__contact">
+                        <button class="mdl-button mdl-js-button mdl-button--icon" style="margin-right:1rem;">
+                            <i class="material-icons">file_download</i>
+                        </button>
+                    </span>
+                    <span class="mdl-chip__text">Download</span>
+                </span>                
+                <button onclick="location.pathname = '/download.html'" class="mdl-button mdl-js-button mdl-button--icon mdl-cell--hide-desktop mdl-cell--hide-tablet" style="margin-right:1rem;">
+                    <i class="material-icons">file_download</i>
+                </button>
+                <span class="mdl-chip mdl-chip--contact mdl-color--green mdl-color-text--white mdl-cell--hide-phone" onclick="document.getElementById('lang_menu').click();">
+                    <span class="mdl-chip__contact">
+                        <button id="lang_menu" class="mdl-button mdl-js-button mdl-button--icon">
+                            <i class="material-icons">language</i>
+                        </button>  
+                    </span>
+                    <span class="mdl-chip__text">Languages</span>
+                </span>
+                <button id="lang_menu" class="mdl-button mdl-js-button mdl-button--icon mdl-cell--hide-desktop mdl-cell--hide-tablet">
                     <i class="material-icons">language</i>
                 </button>                
                 <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="lang_menu">
@@ -99,7 +118,7 @@
                 <div class="mdl-cell mdl-cell--7-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="text-align:left"> 
                     <p><b>Bitcoin Platinum</b>使用区块链技术进行操作、无需中央治理或第三方干预; bitcoin platinum的管理、发行和维护由零散网络集体进行。</p>
                     <br />
-                    <p><b>Bitcoin Platinum</b>是公开代码的; bitcoin platinum 的设计是公开的、谁也不能拥有或控制bitcoin platinum，每个人都可以参与。 无限制的成长、全世界范围的扩张、不需要权限的革新、分散的开发,使未来辉煌灿烂。</p>
+                    <p><b>Bitcoin Platinum</b>是公开代码的; bitcoin platinum 的设计是公开的、谁也不能所有或控制bitcoin platinum，每个人都可以参与。 无限制的成长、全世界范围的扩张、无受权 的革新、分散的开发,使未来辉煌灿烂。</p>
                 </div>
             </div>
         </div>
@@ -137,15 +156,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
-                    <div style="margin-top:30%">
-                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab"  onclick="location.assign('https://github.com/BitcoinPlatinum/bitcoinplatinum.github.io')">
-                            <i class="material-icons">add</i>
-                        </button>
-                        <br />
-                        <p style="color:#707070">加服务</p>
-                    </div>
-                </div>
                 <div class="mdl-layout-spacer"></div>
             </div>
             <br />
@@ -160,19 +170,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
-                    <div style="margin-top:30%">
-                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab" onclick="location.assign('https://github.com/BitcoinPlatinum/bitcoinplatinum.github.io')">
-                            <i class="material-icons">add</i>
-                        </button>
-                        <br />
-                        <p style="color:#707070">加服务</p>
-                    </div>
-                </div>
                 <div class="mdl-layout-spacer"></div>
             </div>
             <br />
-            <h2 style="text-align:center;">Mining Pool</h2>
+            <h2 style="text-align:center;">Mining Pools</h2>
             <div class="mdl-grid">
                 <div class="mdl-layout-spacer"></div>
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
@@ -183,27 +184,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
-                    <div style="margin-top:30%">
-                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab" onclick="location.assign('https://github.com/BitcoinPlatinum/bitcoinplatinum.github.io')">
-                            <i class="material-icons">add</i>
-                        </button>
-                        <br />
-                        <p style="color:#707070">加服务</p>
-                    </div>
-                </div>
                 <div class="mdl-layout-spacer"></div>
             </div>
             <br />
-            <h2 style="text-align:center;">服务
-                <span>
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--mini-fab" onclick="location.assign('https://github.com/BitcoinPlatinum/bitcoinplatinum.github.io')">
-                        <i class="material-icons">add</i>
-                    </button>
-                </span>
-            </h2>
+            <h2 style="text-align:center;">加服务</h2>
             <div class="mdl-grid">
-                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-layout-spacer"></div>                
+                <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--2-col-phone" style="text-align:center;">
+                    <div style="margin-top:1rem">
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="location.assign('https://github.com/BitcoinPlatinum/bitcoinplatinum.github.io')">
+                            <i class="material-icons">add</i>
+                        </button>
+                    </div>
+                </div>
                 <div class="mdl-layout-spacer"></div>
             </div>
         </div>
@@ -260,6 +253,7 @@
                     <div>
                         <br />
                         <p>* 小心诈骗网站。我们不卖BTP，不要求你的私钥。</p>
+                        <p>* 翻译:朴世炫(sehyun park) <a href="https://www.facebook.com/Seda-1550402428384947/">@Seda</a></p>
                     </div>                    
                 </div>
                 <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="padding:2em;">
