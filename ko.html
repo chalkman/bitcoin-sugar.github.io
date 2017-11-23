@@ -67,10 +67,21 @@
     <header id="nav" class="mdl-layout__header" style="position:fixed;width:100%;z-index:2;background-color:#29434e;color:white">
         <div class="mdl-layout-icon" style="text-align:right;" onclick="document.getElementById('lname').click();"><img src="images/bpt_logo.png" height="100%" /></div>
         <div class="mdl-layout__header-row">
-            <a class="mdl-navigation__link" href="#b1" id="lname"><span onclick="document.getElementById('lname').click();" class="mdl-layout-title">Bitcoin Platinum</span></a>
+            <a class="mdl-navigation__link" href="#b0" id="lname"><span onclick="document.getElementById('lname').click();" class="mdl-layout-title">Bitcoin Platinum</span></a>
             <div class="mdl-layout-spacer"></div>
             <div>
-                <span class="mdl-chip mdl-chip--contact mdl-color--green mdl-color-text--white mdl-cell--hide-phone" style="margin-right:2rem;" onclick="location.pathname = '/download.html'">
+                <!--<span class="mdl-chip mdl-chip--contact mdl-color--green mdl-color-text--white mdl-cell--hide-phone" style="margin-right:2rem;" onclick="location.pathname = '/hardfork.html'">
+                    <span class="mdl-chip__contact">
+                        <button class="mdl-button mdl-js-button mdl-button--icon" style="margin-right:1rem;">
+                            <i class="material-icons">file_download</i>
+                        </button>
+                    </span>
+                  <span class="mdl-chip__text">About HF</span>
+                </span>
+                <button onclick="location.pathname = '/hardfork.html'" class="mdl-button mdl-js-button mdl-button--icon mdl-cell--hide-desktop mdl-cell--hide-tablet" style="margin-right:1rem;">
+                    <i class="material-icons">info_outline</i>
+                </button>-->
+                <span class="mdl-chip mdl-chip--contact mdl-color--green mdl-color-text--white mdl-cell--hide-phone" style="margin-right:1rem;cursor:pointer;" onclick="location.pathname = '/download.html'">
                     <span class="mdl-chip__contact">
                         <button class="mdl-button mdl-js-button mdl-button--icon" style="margin-right:1rem;">
                             <i class="material-icons">file_download</i>
@@ -78,10 +89,10 @@
                     </span>
                     <span class="mdl-chip__text">Download</span>
                 </span>
-                <button onclick="location.pathname = '/download.html'" class="mdl-button mdl-js-button mdl-button--icon mdl-cell--hide-desktop mdl-cell--hide-tablet" style="margin-right:1rem;">
+                <button onclick="location.pathname = '/download.html'" class="mdl-button mdl-js-button mdl-button--icon mdl-cell--hide-desktop mdl-cell--hide-tablet" style="margin-right:1rem;cursor:pointer;">
                     <i class="material-icons">file_download</i>
                 </button>
-                <span class="mdl-chip mdl-chip--contact mdl-color--green mdl-color-text--white mdl-cell--hide-phone" onclick="document.getElementById('lang_menu').click();">
+                <span class="mdl-chip mdl-chip--contact mdl-color--green mdl-color-text--white mdl-cell--hide-phone" style="cursor:pointer;" onclick="document.getElementById('lang_menu').click();">
                     <span class="mdl-chip__contact">
                         <button id="lang_menu" class="mdl-button mdl-js-button mdl-button--icon">
                             <i class="material-icons">language</i>
@@ -115,15 +126,23 @@
         <div id="b1" style="background-color:#424242;padding:3em;text-align:center;color:#f7931a;">
             <div class="mdl-grid" id="ct">
                 <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="text-align:center">
-                    <h2><b>메인넷</b></h2>
-                    <h4>포크까지 남은 시간</h4>
+                    <h2><b>Mainnet</b></h2>
+                    <h4>will be hard-forked in</h4>
                     <hr class="mdl-cell--hide-desktop" />
                 </div>
                 <div class="mdl-cell mdl-cell--7-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="text-align:center">
-                    <h1 id="clock"></h1>
+                    <h3><span id="clock" style="font-size:2em;"></span> / 500000 blocks</h3>
+                    <span class="mdl-chip mdl-chip--contact" style="background-color:#f7931a;color:#424242;cursor:pointer;" onclick="location.pathname = '/hardfork.html'">
+                        <span class="mdl-chip__contact">
+                            <button class="mdl-button mdl-js-button mdl-button--icon" style="margin-right:1rem;">
+                                <i class="material-icons">info_outline</i>
+                            </button>
+                        </span>
+                      <span class="mdl-chip__text">More infos</span>
+                    </span>
                 </div>
             </div>
-            <h1 style="display:none;text-align:center" id="ct1">메인넷이 포크되었습니다!</h1>
+            <h1 style="display:none;text-align:center" id="ct1">Main Net is Forked!!</h1>
         </div>
         <div id="b2" style="background-color:#ffffff;padding:3em;padding-top:7em;text-align:center;color:black;">
             <div class="mdl-grid">
@@ -148,6 +167,8 @@
                     <p class="gray">신속한 피어 투 피어 거래</p>
                 </div>
             </div>
+        </div>
+        <div id="b2a" style="background-color:#ffffff;padding:3em;color:black;">
             <div class="mdl-grid" style="padding-top:5em;padding-bottom:3em;">
                 <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" style="text-align:center">
                     <h2>완벽하게</h2><h2><b class="pink">탈중앙화된</b></h2>
@@ -319,6 +340,7 @@
     <script src="jquery-ui.min.js"></script>
     <script>
         window.onload = function(){
+            getreq();
             document.getElementById("main").style.display = "";
             document.getElementById("loading").style.display = "none";
             var h = window.innerHeight;
@@ -345,22 +367,46 @@
             child.children[1].style.background = "rgba(0, 0, 0, 0.2)"
         }
 
-        var countDownDate = new Date("Dec 23, 2017 00:00:00").getTime();
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var distance = countDownDate - now;
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            document.getElementById("clock").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("ct").style.display = "none";
-                document.getElementById("ct1").style.display = "";
+        function corsreq(method, url) {
+            var xhr = new XMLHttpRequest();
+            if ("withCredentials" in xhr) {
+                xhr.open(method, url, true);
+            } else if (typeof XDomainRequest != "undefined") {
+                xhr = new XDomainRequest();
+                xhr.open(method, url);
+            } else {
+                xhr = null;
             }
-        }, 1000);
+            return xhr;
+        }
+
+        function getreq() {
+            var req = corsreq("get", "https://blockchain.info/q/getblockcount");
+            if (req) {
+                req.onload = function() {
+                    var distance = req.responseText;
+                    document.getElementById("clock").innerHTML = distance;
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("ct").style.display = "none";
+                        document.getElementById("ct1").style.display = "";
+                    }
+                };
+                req.send();
+            }
+        }
+        //var countDownDate = new Date("Dec 23, 2017 00:00:00").getTime();
+        var x = setInterval(function() {
+            //var now = new Date().getTime();
+            //var distance = countDownDate - now;
+            //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            //var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            //var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            //var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            //document.getElementById("clock").innerHTML = days + "d " + hours + "h "
+            //+ minutes + "m " + seconds + "s ";
+            getreq();
+        }, 60000);
     </script>
 </body>
 </html>
