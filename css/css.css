@@ -1,0 +1,115 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+p, a {
+    font-size: 1.5em;
+}
+h5 {
+    font-size: 1.6em;
+}
+body {
+    background-color:#424242;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.pink {
+    color: #e91e63;
+}
+.grey {
+    color: #707070;
+}
+.btcy {
+    color: #f7931a
+}
+.center {
+    text-align:center;
+}
+.bicon {
+    font-size:5rem
+}
+.card {
+    background-color:#29434e;
+    color:white;
+    width:100%;
+    cursor:pointer;
+}
+.cardact {
+    height:52px;
+    padding:16px;
+    background:rgba(0, 0, 0, 0.4);
+}
+.chip {
+    background-color:#f7931a;
+    color:#424242;
+    cursor:pointer;
+}
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 }
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
+    to{ bottom:0; opacity:1 }
+}
+@media screen and (max-width: 1024px){
+    .mdl-layout__header {
+        display: inherit;
+    }
+}
+#nav {
+    position:fixed;
+    width:100%;
+    z-index:2;
+    background-color:#424242;
+    color:white;
+}
+#b0 {
+    background-color:#ffffff;
+    padding:3em;
+    padding-top:7em;
+    text-align:center;
+    color:black;
+}
+#b1 {
+    background-color:#424242;
+    padding:3em;
+    text-align:center;
+    color:#f7931a;
+}
+#b2 {
+    background-color:#ffffff;
+    padding:3em;
+    text-align:center;
+    color:black;
+}
+#b2a {
+    background-color:#ffffff;
+    padding:3em;
+    color:black;
+}
+#b3 {
+    background-color:white;
+    padding:3em;
+    text-align:center;
+}
+#b4 {
+    padding:10%;
+    background-color:#fafafa;
+    color:black;
+}
+#contact {
+    background-color:#424242;
+    padding:3em;
+    padding-top:6em;
+    position:inherit;
+    color:white;
+}
